@@ -1,0 +1,32 @@
+fun main()
+{   print("enter name:")
+    val name: String=readln()
+    print("enter roll no:")
+    val en_no: Int=readln().toInt()
+    print("enter branch:")
+    val branch: String=readln()
+    print("enter class:")
+    val clas :String=readln()
+    print("enter batch:")
+    val batch: String=readln()
+    print("enter enter collage name:")
+    val collage: String=readln()
+    print("enter university:")
+    val uni: String=readln()
+    print("enter age:")
+    val age: String=readln()
+
+    println("*****************************")
+
+    println("Students data:")
+    println("Nn_no:${en_no}")
+    println("Name:${name}")
+    println("Age:${age}")
+    println("Branch:${branch}")
+    println("Class:${clas}")
+    println("Batch:${batch}")
+    println("Collage name:${collage}")
+    println("University name:${uni}")
+
+
+}
