@@ -3,17 +3,17 @@ fun main ()
     println("Enter array size : ")
     val size = readln().toInt()
 
-    val bhavya = IntArray(size)
+    val deep = IntArray(size)
 
     println("Enter $size number : ")
     for(i in 0 until size)
     {
-        bhavya[i] = readln().toInt()
+        deep[i] = readln().toInt()
     }
 
-    println("your array : ${bhavya.contentToString()}")
+    println("your array : ${deep.contentToString()}")
 
-    val maxnum = bhavya.maxOrNull()
+    val maxnum = deep.maxOrNull()
 
     println("max number is : $maxnum")
 

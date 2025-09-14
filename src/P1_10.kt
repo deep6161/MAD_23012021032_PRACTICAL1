@@ -18,14 +18,14 @@ class Car(
 }
 
 fun main() {
-    val car1 = Car("BMW", "2018", 100000.0, 9999.0, "Bhavya", 105.0)
+    val car1 = Car("BMW", "2018", 100000.0, 9999.0, "deep", 105.0)
     car1.displaycarinfo()
 
     println("*************** Array list of Cars ****************")
 
     val carlist = arrayListOf(
-        Car("BMW", "M5", 5000000.0, 40000000.0, "Bhavya patel", 15000.0),
-        Car("Mercides", "M5", 5000000.0, 40000000.0, "Bhavya patel", 15000.0)
+        Car("BMW", "M5", 5000000.0, 40000000.0, "deep patel", 15000.0),
+        Car("Mercides", "M5", 5000000.0, 40000000.0, "deep patel", 15000.0)
     )
 
     // Display all cars in the list
