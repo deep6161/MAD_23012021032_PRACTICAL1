@@ -1,3 +1,61 @@
+
+class Matrix(private val data: Array<IntArray>) {
+
+    private val rows = data.size
+    private val cols = data[0].size
+
+    // Matrix addition
+    operator fun plus(other: Matrix): Matrix {
+        require(rows == other.rows && cols == other.cols) {
+            "Matrix dimensions must match for addition"
+        }
+        val result = Array(rows) { IntArray(cols) }
+        for (i in 0 until rows) {
+            for (j in 0 until cols) {
+                result[i][j] = data[i][j] + other.data[i][j]
+            }
+        }
+        return Matrix(result)
+    }
+
+    // Matrix subtraction
+    operator fun minus(other: Matrix): Matrix {
+        require(rows == other.rows && cols == other.cols) {
+            "Matrix dimensions must match for subtraction"
+        }
+        val result = Array(rows) { IntArray(cols) }
+        for (i in 0 until rows) {
+            for (j in 0 until cols) {
+                result[i][j] = data[i][j] - other.data[i][j]
+            }
+        }
+        return Matrix(result)
+    }
+
+    // Matrix multiplication
+    operator fun times(other: Matrix): Matrix {
+        require(cols == other.rows) {
+            "Matrix A columns must equal Matrix B rows for multiplication"
+        }
+        val result = Array(rows) { IntArray(other.cols) }
+        for (i in 0 until rows) {
+            for (j in 0 until other.cols) {
+                for (k in 0 until cols) {
+                    result[i][j] += data[i][k] * other.data[k][j]
+                }
+            }
+        }
+        return Matrix(result)
+    }
+
+    // Print matrix neatly
+    override fun toString(): String {
+        return data.joinToString("\n") { row ->
+            row.joinToString("\t")
+        }
+    }
+}
+
 fun main() {
     val firstMatrix = Matrix(arrayOf(
         intArrayOf(3, -2, 5),
