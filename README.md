@@ -88,4 +88,5 @@ This program defines a `Car` class with properties and a constructor. It include
 
 This problem explains the concept of operator overloading and implements matrix addition, subtraction, and multiplication using a `Matrix` class. It also overloads the `toString()` function for customized output.
 
-_Note: No screenshot was provided for this problem._
+![Storing and displaying different variable types](https://github.com/deep6161/MAD_23012021032_PRACTICAL1/blob/master/SCREEENSHOTS/p1_11_1.png)
+![Storing and displaying different variable types](https://github.com/deep6161/MAD_23012021032_PRACTICAL1/blob/master/SCREEENSHOTS/p1_11_2.png)
